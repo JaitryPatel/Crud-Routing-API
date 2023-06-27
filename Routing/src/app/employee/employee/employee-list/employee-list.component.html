@@ -1,0 +1,29 @@
+<p>employee-list works!</p>
+<div>
+    <table border="1">
+        <thead>
+            <tr *ngFor="let head of headers">
+                <th>{{head.name}}</th>
+                <th>{{head.email}}</th>
+                <th>{{head.department}}</th>
+                <th>{{head.Address}}</th>
+                <th>{{head.password}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.name}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.department}}</td>
+                <td>{{employee.Address}}</td>
+                <td>{{employee.password}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+<div>
+    <a routerLink="/template-form">Template form</a>
+    <br>
+    <a routerLink="/reactive-form">Reactive form</a>
+</div>

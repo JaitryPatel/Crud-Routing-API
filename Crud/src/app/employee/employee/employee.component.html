@@ -1,0 +1,20 @@
+<p>employee works!</p>
+
+<ul class="nav-items">
+    <!-- <li><a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li> -->
+    <li><a routerLink="/add-emp" routerLinkActive="active">Add-emp</a></li>
+    <li><a routerLink="/emp-list" routerLinkActive="active">Employee List</a></li>
+
+
+</ul>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <app-add-super-user (getUpdatedData)="getUpdatedData($event)"></app-add-super-user>
+        <hr>
+        <!-- <app-super-user *ngFor="let item of header;" >{{item}}</app-super-user> -->
+        <app-super-user *ngFor="let data of user; let i = index" [user]="user" [id]="i" 
+         (getUpdatedData)="getUpdatedData($event)"></app-super-user>
+      </div>
+    </div>
+  </div>

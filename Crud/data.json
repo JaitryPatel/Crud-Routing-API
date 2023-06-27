@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Om Patel",
+      "department": "QA",
+      "age": 15,
+      "salary": "10,00,000",
+      "country": "Ahmedavad"
+    }
+  ]
+}

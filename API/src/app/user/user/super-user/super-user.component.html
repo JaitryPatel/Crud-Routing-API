@@ -1,0 +1,46 @@
+<!-- <p>super-user works!</p> -->
+<div class="container1"> 
+    <!-- <h3>Employee Table</h3> -->
+    <!-- <div class="input-container">
+        <input type="text" class="input" [(ngModel)]="searchText" placeholder="search...">
+    </div> -->
+    <div class="table" >
+        <table border="2">
+            <thead>
+                <tr *ngFor="let data of tableheader">
+                    <!-- <th>{{data.Header}}</th> -->
+                    <th>{{data.id}}</th>
+                    <th>{{data.name}}</th>
+                    <th>{{data.department}}</th>
+                    <th>{{data.age}}</th>
+                    <th>{{data.salary}}</th>
+                    <th>{{data.country}}</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of user">
+                    <td>{{data.id}}</td>
+                    <td>{{data.name }}</td>
+                    <td>{{data.department}}</td>
+                    <td>{{data.age}}</td>
+                    <td>{{data.salary}}</td>
+                    <td>{{data.country}} </td>
+                    <td><span><button class="edit">EDIT</button></span><span><button class="delete" (click)="removeUser(data.id)">DELETE</button></span></td>
+                    <!-- <td (click)="removeUser(data.id)">Remove User</td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+
+<!-- <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <h3>{{ users.name }}</h3>
+
+        <p>This user belongs to {{ users.universe }} universe.</p>
+        <a (click)="removeUser(users.id)">Remove Hero</a>
+        <hr>
+
+    </div>
+</div> -->
